@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'koodak';
+  src: url("../fonts/KoodakBold.eot?#") format("eot"), url("../fonts/KoodakBold.ttf") format("truetype"), url("../fonts/KoodakBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nazanin';
+  src: url("../fonts/Nazanin.eot?#") format("eot"), url("../fonts/Nazanin.ttf") format("truetype"), url("../fonts/Nazanin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url("../fonts/Yekan.eot?#") format("eot"), url("../fonts/Yekan.ttf") format("truetype"), url("../fonts/Yekan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.Head {
+  font-family: "koodak";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #303f9f;
+}
+
+.No2 {
+  background-color: #303f9f;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.No6 {
+  border-bottom: 5px solid goldenrod;
+  background-color: #303f9f;
+  color: white;
+}
+
+.Poshtiban {
+  background-color: #28a745;
+  font-family: "koodak";
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 75px;
+  height: 100px;
+  margin: 45%;
+  z-index: 99;
+  -webkit-transform: translateY(-55px);
+          transform: translateY(-55px);
+}
+
+.Poshtiban:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.Footer {
+  font-family: "koodak";
+  background-color: #303f9f;
+  height: 250px;
+  direction: rtl;
+  gap: 100px;
+}
+
+.Footer p {
+  font-size: 17px;
+  word-wrap: break-word;
+  width: 200px;
+}
+
+.Footer:first-child, ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+ul {
+  font-size: 25px;
+  color: #333;
+}
+
+li a, .Kolie {
+  font-size: 16px;
+  color: white;
+}
+
+li a:hover {
+  color: gainsboro;
+}
+
+.No1 {
+  font-family: "koodak";
+  font-size: 25px;
+  background-color: #303f9f77;
+  -webkit-backdrop-filter: blur(6.9px);
+          backdrop-filter: blur(6.9px);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 75px;
+}
+
+.home-wrap {
+  background-image: url(../Images/Mazda.jpg);
+  background-repeat: none;
+  background-size: cover;
+  height: 100%;
+}
+
+.Map {
+  font-family: "koodak";
+  background-color: #303f9f77;
+  -webkit-backdrop-filter: blur(6.9px);
+          backdrop-filter: blur(6.9px);
+  height: 1060px;
+  width: 100%;
+}
+
+div .border:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0px 0px 15px 0px black;
+          box-shadow: 0px 0px 15px 0px black;
+}
+
+table, th, td {
+  font-family: "koodak";
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #b8c1ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+tr {
+  border: 2px solid #333;
+}
+
+.No3 {
+  color: #333;
+}
+
+td:hover {
+  background-color: #333;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+td:hover .No3 {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=Namayandegi.css.map */

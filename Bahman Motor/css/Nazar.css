@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'koodak';
+  src: url("../fonts/KoodakBold.eot?#") format("eot"), url("../fonts/KoodakBold.ttf") format("truetype"), url("../fonts/KoodakBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nazanin';
+  src: url("../fonts/Nazanin.eot?#") format("eot"), url("../fonts/Nazanin.ttf") format("truetype"), url("../fonts/Nazanin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url("../fonts/Yekan.eot?#") format("eot"), url("../fonts/Yekan.ttf") format("truetype"), url("../fonts/Yekan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.Head {
+  font-family: "koodak";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #303f9f;
+}
+
+.No2 {
+  background-color: #303f9f;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.No4 {
+  color: white;
+}
+
+.No4:hover {
+  color: gainsboro;
+}
+
+.No1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* height: 88.7vh; */
+  font-family: "koodak";
+  background-color: #303f9fa4;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.home-wrap {
+  direction: rtl;
+  background-image: url(../Images/Dignity.jpg);
+  background-size: cover;
+}
+
+.No3 {
+  font-family: "koodak";
+  background-color: #303f9fa4;
+}
+
+.Poshtiban {
+  background-color: #28a745;
+  font-family: "koodak";
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 75px;
+  height: 100px;
+  margin: 45%;
+  z-index: 99;
+  -webkit-transform: translateY(-55px);
+          transform: translateY(-55px);
+}
+
+.Poshtiban:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 750px) {
+  .jumbotron {
+    height: 100%;
+  }
+}
+
+.No5 {
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 15px 0px gray;
+          box-shadow: 0px 0px 15px 0px gray;
+}
+
+.No6 {
+  border-bottom: 5px solid goldenrod;
+  background-color: #303f9f;
+  color: white;
+}
+
+.No7 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.356);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 10px;
+  font-family: "koodak";
+}
+
+table, th, td {
+  font-family: "koodak";
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  border: 0.1px solid black;
+  border-collapse: collapse;
+  color: white;
+}
+
+tr:first-child {
+  background-color: #303f9fa4;
+}
+
+tr:nth-child(2) {
+  background-color: #17a2b8;
+}
+
+tr:nth-child(3) {
+  background-color: #28a745;
+}
+
+tr:nth-child(4) {
+  background-color: #007bff;
+}
+
+.Color {
+  color: white;
+}
+/*# sourceMappingURL=Nazar.css.map */

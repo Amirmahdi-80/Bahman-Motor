@@ -1,0 +1,146 @@
+// Here Are SCSS
+    $main-color:#303f9f;
+// _______________
+    $Backgrond-main:#303f9fa4;
+// _______________
+    $Color1:white;
+// _______________
+    $Font-main:'koodak';
+// _______________
+    $Color1-hover:gainsboro;
+// End of SCSS
+
+// Here Are CSS
+@font-face {
+    font-family: 'koodak';
+    src: url('../fonts/KoodakBold.eot?#')format('eot'), url('../fonts/KoodakBold.ttf')format('truetype'), url('../fonts/KoodakBold.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nazanin';
+    src: url('../fonts/Nazanin.eot?#')format('eot'), url('../fonts/Nazanin.ttf')format('truetype'), url('../fonts/Nazanin.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.eot?#')format('eot'), url('../fonts/Yekan.ttf')format('truetype'), url('../fonts/Yekan.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.Head{
+    font-family: $Font-main;
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-color;
+}
+.No2{
+    background-color: $main-color;
+    color: $Color1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.No4{
+    color: $Color1;
+}
+.No4:hover{
+    color: $Color1-hover;
+}
+.No1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 88.7vh; */
+    font-family: $Font-main;
+    background-color: $Backgrond-main;
+    backdrop-filter: blur(5px);
+}
+.home-wrap{
+    direction: rtl;
+    background-image: url(../Images/Dignity.jpg);
+    background-size: cover;
+}
+.No3{
+    font-family: $Font-main;
+    background-color: $Backgrond-main;
+}
+.Poshtiban{
+    background-color: #28a745;
+    font-family: $Font-main;
+    color: $Color1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    width: 75px;
+    height: 100px;
+    margin: 45%;
+    z-index: 99;
+    transform: translateY(-55px);
+}
+.Poshtiban:hover{
+    transition: 1s;
+    transform: translateY(-10px);
+}
+@media only screen and (max-width:750px){
+    .jumbotron{
+        height: 100%;
+    }
+}
+.No5{
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px gray;
+}
+.No6{
+    border-bottom: 5px solid goldenrod;
+    background-color: $main-color;
+    color: $Color1;
+}
+.No7{
+    color: $Color1;
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    font-family: $Font-main;
+}
+table,th,td{
+    font-family: $Font-main;
+    box-shadow: 0px 0px 2px black;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    border:0.1px solid black;
+    border-collapse: collapse;
+    color: $Color1;
+}
+tr:first-child{
+    background-color: $Backgrond-main;
+}
+tr:nth-child(2){
+    background-color: #17a2b8;
+}
+tr:nth-child(3){
+    background-color: #28a745;
+}
+tr:nth-child(4){
+    background-color: #007bff;
+}
+.Color{
+    color: $Color1;
+}

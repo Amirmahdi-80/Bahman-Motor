@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Tamas.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Head -->
+    <nav class="navbar Head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/BM.png" alt="Logo" width="100" height="60"
+                    class="d-inline-block align-text-top ml-3">
+            </a>
+            <!-- Poshtiban -->
+            <button type="button" class="Poshtiban py-3 position-fixed" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">پشتیبانی فنی<i class="fa fa-comment-o"></i></button>
+
+            <div class="modal fade No5" id="exampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header No6">
+                            <h5 class="modal-title" id="exampleModalLabel">ارسال پیام پشتیبانی فنی</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body No6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">موضوع:</label>
+                                    <input type="text" class="form-control text-right" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">پیام:</label>
+                                    <textarea class="form-control text-right" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer No6">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary" onclick="Send()">ارسال پیام</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Poshtiban -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 No2">
+                <li class="nav-item">
+                    <a class="nav-link mr-5 No4" href="../Home.html"
+                        style="-webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0,0,0,0.2));">صفحه
+                        نخست</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Head -->
+
+    <!-- Main -->
+    <div class="home-wrap">
+        <div class="home-inner">
+            <img src="../Images/فیدلیتی.jpg" alt="درباره ما" width="100%" height="275px">
+            <div class="w-100 row justify-content-center bg-light No1 overflow-auto">
+                <div class="bg-white w-75 No3 row justify-content-between" dir="rtl">
+                    <div class="w-50 text-right pr-3 d-flex flex-column" dir="rtl">
+                        <h3 class="mt-4">صفحه تماس</h3>
+                        <p class="mr-5 mt-3">با استفاده از فرم زیر می توانید ما را از انتقادات و پیشنهادات خود بهره مند
+                            سازید.</p>
+                        <input type="text" placeholder="نام و نام خانوادگی*" class="mr-5 w-100 p-1 pr-3 mb-3">
+                        <input type="email" placeholder="ایمیل*" class="mr-5 w-100 p-1 mb-3 pr-3">
+                        <input type="number" placeholder="شماره تماس*" class="mr-5 w-100 p-1 pr-3 mb-3">
+                        <textarea name="" id="" cols="40" rows="10" class="w-100 mr-5 p-1 pr-3" placeholder="پیام*"
+                            style="resize: none;height: 200px;"></textarea>
+                        <a href="Panel.html" class="btn btn-primary w-25 mr-5 mt-3">ثبت و ارسال فرم</a>
+                    </div>
+                    <div class="No7 d-flex align-items-start mt-5 flex-column text-right">
+                        <h5 class="w-50 p-4 mb-3 border-bottom">اطلاعات تماس</h5>
+                        <a href="#" class="text-decoration-none">
+                            <P class="w-50 mb-1"><i class="fa fa-home ml-1"></i>سازمان فروش:تهران کیلومتر 13 جاده مخصوص
+                                کرج(اتوبان لشگری)</P>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <p class="w-50 mb-1"><i class="fa fa-envelope ml-1"></i>ايميل: bahmanmotorinfo@bahman.ir</p>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <p class="w-100 mb-1"><i class="fa fa-phone ml-1"></i>تلفن: سازمان فروش : 02148027</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Main -->
+
+    <!-- Footer -->
+    <div class="w-100 Footer row justify-content-center align-items-start pt-5 pl-5 m-0 overflow-auto">
+        <div class="justify-content-center align-items-center text-center">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/BM.png" width="145" height="75" alt="Bahman Motor">
+            </a>
+            <p class="mt-2 Kolie">کلیه حقوق مادی و معنوی برای شرکت بهمن‌موتور محفوظ می‌باشد.</p>
+        </div>
+        <div>
+            <ul class="text-right">سیستم ها
+                <li class="mt-2"><a href="#" class="text-decoration-none">تامین کنندگان</a></li>
+                <li><a href="#" class="text-decoration-none">سیستم فروش بهمن موتور</a></li>
+                <li><a href="#" class="text-decoration-none">خودرو فرسوده</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="text-right">شرکت‌های مرتبط
+                <li class="mt-2"><a href="#" class="text-decoration-none">گروه بهمن</a></li>
+                <li><a href="#" class="text-decoration-none">شرکت بهمن لیزینگ</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="text-right">روابط عمومی
+                <li class="mt-2"><a class="text-decoration-none" href="#">ارتباط با مشتریان</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+    <!-- Java -->
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+        function Send() {
+            document.getElementById("recipient-name").innerText = ""
+            document.getElementById("message-text").innerText = ""
+            window.alert("پیام شما به پشتیبان ارسال شد")
+        }
+    </script>
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

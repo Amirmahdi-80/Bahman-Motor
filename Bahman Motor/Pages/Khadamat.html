@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Khadamat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Head -->
+    <nav class="navbar Head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/BM.png" alt="Logo" width="100" height="60"
+                    class="d-inline-block align-text-top ml-3">
+            </a>
+            <!-- Poshtiban -->
+            <button type="button" class="Poshtiban py-3 position-fixed" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">پشتیبانی فنی<i class="fa fa-comment-o"></i></button>
+
+            <div class="modal fade No5" id="exampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header No6">
+                            <h5 class="modal-title" id="exampleModalLabel">ارسال پیام پشتیبانی فنی</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body No6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">موضوع:</label>
+                                    <input type="text" class="form-control text-right" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">پیام:</label>
+                                    <textarea class="form-control text-right" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer No6">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary" onclick="Send()">ارسال پیام</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Poshtiban -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 No2">
+                <li class="nav-item">
+                    <a class="nav-link mr-5 No4" href="../Home.html"
+                        style="-webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0,0,0,0.2));">صفحه
+                        نخست</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Head -->
+
+    <!-- Main -->
+    <div class="home-wrap container-fluid p-0">
+        <div class="home-inner">
+            <img src="../Images/Back-Khadamat.jpg" alt="خدمات" class="w-100" height="275px">
+            <div class="Khat"></div>
+            <div class="No1">
+                <div class="w-100 h-100 No7 flex-column justify-content-center align-items-center m-0 overflow-auto">
+                    <div class="row justify-content-center align-items-center m-0 No8">
+                        <div class="card text-center" style="width: 18rem; height: 25rem;">
+                            <img class="card-img-top" height="75px" width="100px" src="../Images/Bahman.png"
+                                alt="Card image cap">
+                            <div class="card-body flex-column justify-content-center align-items-center">
+                                <h4 class="card-title border-bottom border-primary pb-2">خدمات آنلاین بهمن موتور</h5>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/online-service/Service/bm"
+                                            style="text-decoration: none;">
+                                            نرخ اجرت تعمیرات بهمن موتور <span
+                                                class="badge badge-pill badge-light">+2</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/online-service/Part/bm"
+                                            style="text-decoration: none;">
+                                            قیمت قطعات بهمن موتور <span
+                                                class="badge badge-pill badge-light">+99</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/online-service/Part/bm"
+                                            style="text-decoration: none;">
+                                            نوبت‌دهی اینترنتی بهمن موتور <span
+                                                class="badge badge-pill badge-light">+1</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/online-service/Part/bm"
+                                            style="text-decoration: none;">
+                                            مشاهده صورتحساب مشتریان بهمن موتور<span
+                                                class="badge badge-pill badge-light">+14</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/online-service/RepairHistory/bm"
+                                            style="text-decoration: none;">
+                                            سوابق خدماتی خودرو مشتریان بهمن موتور<span
+                                                class="badge badge-pill badge-light">+12</a></span>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="card text-center" style="width: 18rem; height: 25rem;">
+                            <img class="card-img-top" height="75px" width="100px" src="../Images/Bahman.png"
+                                alt="Card image cap">
+                            <div class="card-body flex-column justify-content-center align-content-center">
+                                <h4 class="card-title border-bottom border-primary pb-2">معرفی خدمات بهمن موتور</h5>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir/page/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%85%D8%AF%D8%A7%D8%AF%DB%8C-%D8%A8%D9%87%D9%85%D9%86-%D9%85%D9%88%D8%AA%D9%88%D8%B1"
+                                            style="text-decoration: none;">
+                                            خدمات امدادی بهمن موتور<span
+                                                class="badge badge-pill badge-light">+10</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir/page/%D8%B1%D9%88%DB%8C%D8%AF%D8%A7%D8%AF%D9%87%D8%A7%DB%8C-%D8%A8%D9%87%D9%85%D9%86-%D9%85%D9%88%D8%AA%D9%88%D8%B1"
+                                            style="text-decoration: none;">
+                                            رویدادهای بهمن موتور<span
+                                                class="badge badge-pill badge-light">+12</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir/page/BAHMAN-UMBRELLA"
+                                            style="text-decoration: none;">
+                                            BAHMAN UMBRELLA <span class="badge badge-pill badge-light">+2</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir/page/%D8%B4%D8%B1%D8%A7%D9%8A%D8%B7-%DA%AF%D8%A7%D8%B1%D8%A7%D9%86%D8%AA%DB%8C-%D8%AE%D9%88%D8%AF%D8%B1%D9%88%D9%87%D8%A7%DB%8C-%D8%B3%D8%A8%D9%83"
+                                            style="text-decoration: none;">
+                                            شرايط گارانتی خودروهای سبك<span
+                                                class="badge badge-pill badge-light">+20</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/online-service/RepairHistory/bm"
+                                            style="text-decoration: none;">
+                                            سوابق خدماتی خودرو مشتریان بهمن موتور<span
+                                                class="badge badge-pill badge-light">+38</a></span>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="card text-center" style="width: 18rem; height: 25rem;">
+                            <img class="card-img-top" height="75px" width="100px" src="../Images/Bahman.png"
+                                alt="Card image cap">
+                            <div class="card-body flex-column justify-content-center align-content-center">
+                                <h4 class="card-title border-bottom border-primary pb-2">مشتریان بهمن موتور</h5>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir/uploads/ckeditor/page/hoghogh%20moshtari.pdf"
+                                            style="text-decoration: none;">
+                                            آیین‌نامه حقوق مشتریان بهمن موتور<span
+                                                class="badge badge-pill badge-light">+5</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="http://bahman.ir/uploads/ckeditor/page/Loader.pdf"
+                                            style="text-decoration: none;">
+                                            قوانین حمایت از حقوق مشتریان بهمن موتور <span
+                                                class="badge badge-pill badge-light">+12</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir//uploads/ckeditor/page/Report.pdf"
+                                            style="text-decoration: none;">
+                                            نمونه فاکتور بهمن موتور <span
+                                                class="badge badge-pill badge-light">+53</a></span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://old.bahman.ir/page/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%B5%D9%88%D8%B1%D8%AA%D8%AD%D8%B3%D8%A7%D8%A8-%D9%85%D8%B4%D8%AA%D8%B1%DB%8C-%D8%A8%D9%87%D9%85%D9%86-%D9%85%D9%88%D8%AA%D9%88%D8%B1"
+                                            style="text-decoration: none;">
+                                            مشاهده صورتحساب مشتری بهمن موتور<span
+                                                class="badge badge-pill badge-light">+99</a></span>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="card text-center" style="width: 18rem; height: 25rem;">
+                            <img class="card-img-top" height="75px" width="100px" src="../Images/Bahman.png"
+                                alt="Card image cap">
+                            <div class="card-body flex-column justify-content-center align-content-center">
+                                <h4 class="card-title border-bottom border-primary pb-2">سایر خدمات بهمن موتور</h5>
+                                    <button type="button" class="btn btn-outline-primary btn w-100 mb-3"><a
+                                            href="https://lms.bahman.ir:9595/" style="text-decoration: none;">
+                                            سامانه یکپارچه آموزش بهمن موتور<span
+                                                class="badge badge-pill badge-light">+1</a></span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="w-100 Footer row justify-content-center align-items-start pt-5 pl-5 m-0 overflow-auto">
+            <div class="justify-content-center align-items-center text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/BM.png" width="145" height="75" alt="Bahman Motor">
+                </a>
+                <p class="mt-2 Kolie">کلیه حقوق مادی و معنوی برای شرکت بهمن‌موتور محفوظ می‌باشد.</p>
+            </div>
+            <div>
+                <ul class="text-right">سیستم ها
+                    <li class="mt-2"><a href="#" class="text-decoration-none">تامین کنندگان</a></li>
+                    <li><a href="#" class="text-decoration-none">سیستم فروش بهمن موتور</a></li>
+                    <li><a href="#" class="text-decoration-none">خودرو فرسوده</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="text-right">شرکت‌های مرتبط
+                    <li class="mt-2"><a href="#" class="text-decoration-none">گروه بهمن</a></li>
+                    <li><a href="#" class="text-decoration-none">شرکت بهمن لیزینگ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="text-right">روابط عمومی
+                    <li class="mt-2"><a class="text-decoration-none" href="#">ارتباط با مشتریان</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of Footer -->
+    </div>
+    <!-- End of Main -->
+
+
+
+    <!-- Java -->
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+        function Send() {
+            document.getElementById("recipient-name").innerText = ""
+            document.getElementById("message-text").innerText = ""
+            window.alert("پیام شما به پشتیبان ارسال شد")
+        }
+    </script>
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

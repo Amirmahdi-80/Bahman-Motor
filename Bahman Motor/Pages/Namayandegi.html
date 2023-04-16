@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Namayandegi.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Head -->
+    <nav class="navbar Head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/BM.png" alt="Logo" width="100" height="60"
+                    class="d-inline-block align-text-top ml-3">
+            </a>
+            <!-- Poshtiban -->
+            <button type="button" class="Poshtiban py-3 position-fixed" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">پشتیبانی فنی<i class="fa fa-comment-o"></i></button>
+
+            <div class="modal fade No5" id="exampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header No6">
+                            <h5 class="modal-title" id="exampleModalLabel">ارسال پیام پشتیبانی فنی</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body No6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">موضوع:</label>
+                                    <input type="text" class="form-control text-right" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">پیام:</label>
+                                    <textarea class="form-control text-right" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer No6">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary" onclick="Send()">ارسال پیام</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Poshtiban -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 No2">
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="../Home.html"
+                        style="-webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0,0,0,0.2));">صفحه
+                        نخست</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Head -->
+
+    <!-- Start Main of Map -->
+    <div class="home-wrap" dir="rtl">
+        <div class="homeinner d-flex flex-column justify-content-center align-items-center">
+            <div class="w-100 No1 text-center pt-3"><i class="fa fa-building-o text-light ml-2"
+                    style="font-size: 30px;"></i>نمایندگی های بهمن موتور</div>
+            <div class="Back w-100 flex-column d-flex justify-content-center align-items-center">
+                <div class="Map d-flex flex-column justify-content-start pt-3 align-items-center">
+                    <p class="text-white d-inline-block text-center pb-0" style="font-size: 25px; width: 800px;">
+                        نمایندگی خود را از روی نقشه انتخاب کنید</p>
+                    <!-- Map -->
+                    <div class="border p-5" style="border-radius: 10px;">
+                        <img src="../Images/IranMap.png" usemap="#Iran-Nam">
+                        <map name="Iran-Nam">
+                            <area target="" alt="تهران" title="تهران"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/tehran"
+                                coords="131,121,140,123,153,130,153,115,161,116,172,110,165,105,157,106,145,99,135,105,131,113"
+                                shape="poly">
+                            <area target="" alt="البرز" title="البرز"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/alborz"
+                                coords="121,95,142,97,129,112,117,111,124,102" shape="poly">
+                            <area target="" alt="خراسان رضوی" title="خراسان رضوی"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/khorasan-razavi"
+                                coords="242,83,259,78,275,82,277,70,293,59,300,70,314,76,324,84,339,84,341,112,333,136,330,155,338,162,334,168,308,151,294,165,285,145,279,160,261,163,256,152,270,128,241,135,256,116,247,99,252,88"
+                                shape="poly">
+                            <area target="" alt="اصفهان" title="اصفهان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/isfahan"
+                                coords="224,145,168,143,150,141,138,140,128,146,131,157,109,164,102,178,114,187,128,184,139,203,136,225,147,232,151,210,175,215,172,189,191,184,200,174,213,174,226,165"
+                                shape="poly">
+                            <area target="" alt="یزد" title="یزد"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/yazd"
+                                coords="175,215,171,227,190,235,191,246,197,259,206,258,203,242,206,225,235,215,248,208,249,199,280,205,287,196,280,184,272,158,260,161,255,152,261,137,269,127,245,131,233,142,225,144,224,163,214,174,201,174,195,182,182,183,173,187,173,200"
+                                shape="poly">
+                            <area target="" alt="تبریز" title="تبریز"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/azerbaijan-east"
+                                coords="65,14,49,26,28,20,20,35,22,49,25,61,32,66,39,73,52,71,51,78,75,71,75,57,71,45,64,43,67,32"
+                                shape="poly">
+                            <area target="" alt="شیراز" title="شیراز"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/fars"
+                                coords="122,255,129,244,136,236,145,241,147,231,155,212,171,214,173,225,189,236,191,248,199,259,209,260,221,273,221,284,226,298,226,310,219,316,195,316,186,324,168,318,155,300,143,267,132,259"
+                                shape="poly">
+                            <area target="" alt="مازندران" title="مازندران"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/mazandaran"
+                                coords="124,79,127,93,142,99,150,107,165,103,173,107,190,97,194,90,191,81,174,83,152,89"
+                                shape="poly">
+                            <area target="" alt="گلستان" title="گلستان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/golestan"
+                                coords="239,50,232,71,223,81,205,88,194,88,192,79,197,69,207,72,214,57" shape="poly">
+                            <area target="" alt="خراسان شمالی" title="خراسان شمالی"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/khorasan-north"
+                                coords="256,46,240,53,232,78,242,83,252,77,274,79,274,69,283,60,267,56" shape="poly">
+                            <area target="" alt="سمنان" title="سمنان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/semnan"
+                                coords="150,138,153,130,154,116,163,117,176,104,195,89,221,83,233,66,235,82,247,83,250,103,256,118,243,129,232,142,167,146"
+                                shape="poly">
+                            <area target="" alt="خراسان جنوبی" title="خراسان جنوبی"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/khorasan-south"
+                                coords="285,144,291,161,305,159,306,151,320,164,333,169,338,187,339,209,329,217,328,224,321,224,322,230,311,235,281,209,286,193,272,180,271,160,281,159"
+                                shape="poly">
+                            <area target="" alt="سیستان و بلوچستان" title="سیستان و بلوچستان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/sistan-baluchestan"
+                                coords="330,218,342,211,359,213,359,225,343,250,353,260,363,280,385,288,388,311,400,313,400,322,387,327,379,335,372,337,368,353,364,366,341,361,312,360,301,337,308,336,301,318,303,296,306,286,315,287,311,237,321,231,322,223"
+                                shape="poly">
+                            <area target="" alt="کرمان" title="کرمان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/kerman"
+                                coords="206,225,205,237,200,239,205,255,224,282,238,277,238,296,258,293,260,301,273,302,264,310,274,323,299,335,307,334,303,320,302,297,310,292,307,286,316,285,310,236,281,206,250,200,246,211,234,215"
+                                shape="poly">
+                            <area target="" alt="هرمزگان" title="هرمزگان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/hormozgan"
+                                coords="160,313,186,325,195,316,220,316,226,307,221,296,223,284,237,278,234,290,252,297,258,291,259,302,271,303,263,311,274,325,298,336,310,362,286,360,269,356,263,332,253,320,237,330,216,335,204,338,186,332"
+                                shape="poly">
+                            <area target="" alt="بوشهر" title="بوشهر"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/bushehr"
+                                coords="109,245,116,245,118,251,124,249,120,256,130,255,136,265,142,271,160,311,146,305,136,302,124,275"
+                                shape="poly">
+                            <area target="" alt="آذربایجان غربی" title="آذربایجان غربی"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/azerbaijan-west"
+                                coords="11,3,6,11,-1,10,5,39,0,47,7,53,18,94,29,90,34,82,38,87,49,87,52,92,60,91,55,81,49,78,51,71,37,73,31,65,22,60,24,51,19,39,22,29,25,20,19,10"
+                                shape="poly">
+                            <area target="" alt="اردبیل" title="اردبیل"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/ardabil"
+                                coords="66,14,78,7,83,13,78,18,81,22,76,27,88,39,86,60,91,71,82,71,77,64,75,55,70,45,62,43,66,29"
+                                shape="poly">
+                            <area target="" alt="گیلان" title="گیلان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/gilan"
+                                coords="88,40,93,41,93,58,98,64,117,68,120,75,120,85,98,83,92,73,84,60" shape="poly">
+                            <area target="" alt="کردستان" title="کردستان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/kurdistan"
+                                coords="33,83,30,90,21,95,29,101,37,103,31,109,33,117,43,128,54,127,57,121,66,122,67,127,72,123,68,109,74,105,67,99,69,92,61,87,57,91,49,91,47,85,38,87"
+                                shape="poly">
+                            <area target="" alt="خوزستان" title="خوزستان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/khuzestan"
+                                coords="75,249,66,238,65,225,58,223,62,203,56,196,66,190,67,177,80,175,98,182,116,208,112,217,105,229,116,233,116,243,107,244,99,247,86,241,82,248"
+                                shape="poly">
+                            <area target="" alt="ایلام" title="ایلام"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/ilam"
+                                coords="58,196,54,186,43,184,38,174,28,172,30,163,21,153,25,145,35,147,43,153,53,154,46,160,51,166,67,176,66,188"
+                                shape="poly">
+                            <area target="" alt="کرمانشاه" title="کرمانشاه"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/kermanshah"
+                                coords="35,119,24,126,23,132,17,136,21,141,19,149,26,145,34,145,46,155,54,155,58,146,66,142,70,137,66,126,63,121,54,123,50,129,42,128"
+                                shape="poly">
+                            <area target="" alt="کهگیلویه و بویراحمد" title="کهگیلویه و بویراحمد"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/kohgiluyeh-boyer-ahmad"
+                                coords="106,229,112,229,116,235,115,245,117,250,126,247,132,246,134,234,145,241,146,231,135,223,128,222,124,214,117,214,109,217"
+                                shape="poly">
+                            <area target="" alt="چهارمحال بختیاری" title="چهارمحال بختیاری"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/chahar-mahaal-bakhtiari"
+                                coords="112,219,117,212,124,214,129,221,135,222,134,210,139,201,132,195,129,181,121,185,113,188,104,175,101,181,114,201,114,209"
+                                shape="poly">
+                            <area target="" alt="لرستان" title="لرستان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/lorestan"
+                                coords="46,159,57,153,59,142,67,140,74,145,76,150,89,149,89,156,93,161,101,159,109,165,103,172,102,181,85,176,69,176,54,170"
+                                shape="poly">
+                            <area target="" alt="زنجان" title="زنجان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/zanjan"
+                                coords="77,64,75,73,61,73,54,80,59,88,68,92,68,101,75,106,87,110,89,102,101,101,101,89,91,84,98,78,91,70"
+                                shape="poly">
+                            <area target="" alt="قزوین" title="قزوین"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/qazvin"
+                                coords="123,83,101,85,96,79,91,83,93,89,100,91,101,100,91,102,91,111,99,114,116,111,119,103,124,98,119,93,127,93"
+                                shape="poly">
+                            <area target="" alt="قم" title="قم" href="https://bahmanmotor.bahman.ir/agencies/city/qom"
+                                coords="114,130,112,140,117,145,127,147,134,140,148,138,152,128,135,123" shape="poly">
+                            <area target="" alt="مرکزی" title="مرکزی"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/markazi"
+                                coords="98,116,128,112,130,122,119,129,111,138,119,146,128,153,117,161,100,159,87,157,88,147,92,130,101,125"
+                                shape="poly">
+                            <area target="" alt="همدان" title="همدان"
+                                href="https://bahmanmotor.bahman.ir/agencies/city/hamadan"
+                                coords="75,107,69,110,72,123,65,129,70,136,66,141,74,149,88,150,92,143,88,140,92,128,98,124,100,113,87,106,85,111"
+                                shape="poly">
+                        </map>
+                    </div>
+                    <p class="text-white border-bottom d-inline-block text-center pb-2 mt-5"
+                        style="font-size: 25px; width: 800px;">نمایندگی خود را از روی جدول انتخاب کنید</p>
+                    <table class="text-center">
+                        <tr>
+                            <td colspan="3" class="bg-dark text-white">استانها</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/azerbaijan-east"
+                                    class="No3">آذربایجان شرقی</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/azerbaijan-west" class="No3">آذر
+                                    بایجان غربی</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/ardabil" class="No3">اردبیل</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/isfahan" class="No3">اصفهان</a>
+                            </td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/alborz" class="No3">البرز</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/ilam" class="No3">ایلام</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/bushehr" class="No3"> بوشهر</a>
+                            </td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/tehran" class="No3"> تهران</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/khorasan-south" class="No3"> خراسان
+                                    جنوبی</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/khorasan-razavi" class="No3">خراسان
+                                    رضوی</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/khorasan-north" class="No3">خراسان
+                                    شمالی</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/khuzestan" class="No3">خوزستان</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/zanjan" class="No3">زنجان</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/semnan" class="No3">سمنان</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/sistan-baluchestan"
+                                    class="No3">سیستان و بلوچستان</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/fars" class="No3">فارس</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/qazvin" class="No3">قزوین</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/qom" class="No3">قم</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/lorestan" class="No3">لرستان</a>
+                            </td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/mazandaran"
+                                    class="No3">مازندران</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/markazi" class="No3">مرکزی</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/hormozgan" class="No3">هرمزگان</a>
+                            </td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/hamadan" class="No3">همدان</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/chahar-mahaal-bakhtiari"
+                                    class="No3">چهارمحال بختیاری</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/kurdistan" class="No3">کردستان</a>
+                            </td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/kerman" class="No3">کرمان</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/kermanshah"
+                                    class="No3">کرمانشاه</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/kohgiluyeh-boyer-ahmad"
+                                    class="No3">کهگیلویه بویراحمد</a></td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/golestan" class="No3">گلستان</a>
+                            </td>
+                            <td><a href="https://bahmanmotor.bahman.ir/agencies/city/gilan" class="No3">گیلان</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><a href="https://bahmanmotor.bahman.ir/agencies/city/yazd"
+                                    class="No3">یزد</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Main of Map -->
+
+    <!-- Footer -->
+    <div class="w-100 Footer row justify-content-center align-items-start pt-5 pl-5 m-0 overflow-auto">
+        <div class="justify-content-center align-items-center text-center">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/BM.png" width="145" height="75" alt="Bahman Motor">
+            </a>
+            <p class="mt-2 Kolie">کلیه حقوق مادی و معنوی برای شرکت بهمن‌موتور محفوظ می‌باشد.</p>
+        </div>
+        <div>
+            <ul class="text-right">سیستم ها
+                <li class="mt-2"><a href="#" class="text-decoration-none">تامین کنندگان</a></li>
+                <li><a href="#" class="text-decoration-none">سیستم فروش بهمن موتور</a></li>
+                <li><a href="#" class="text-decoration-none">خودرو فرسوده</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="text-right">شرکت‌های مرتبط
+                <li class="mt-2"><a href="#" class="text-decoration-none">گروه بهمن</a></li>
+                <li><a href="#" class="text-decoration-none">شرکت بهمن لیزینگ</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="text-right">روابط عمومی
+                <li class="mt-2"><a class="text-decoration-none" href="#">ارتباط با مشتریان</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+    <!-- Java -->
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+        function Send() {
+            document.getElementById("recipient-name").innerText = ""
+            document.getElementById("message-text").innerText = ""
+            window.alert("پیام شما به پشتیبان ارسال شد")
+        }
+    </script>
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

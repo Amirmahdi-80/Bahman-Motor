@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'koodak';
+  src: url("../fonts/KoodakBold.eot?#") format("eot"), url("../fonts/KoodakBold.ttf") format("truetype"), url("../fonts/KoodakBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nazanin';
+  src: url("../fonts/Nazanin.eot?#") format("eot"), url("../fonts/Nazanin.ttf") format("truetype"), url("../fonts/Nazanin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url("../fonts/Yekan.eot?#") format("eot"), url("../fonts/Yekan.ttf") format("truetype"), url("../fonts/Yekan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "koodak";
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.Head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #303f9f;
+}
+
+.home-wrap {
+  background-image: url(../Images/Fidelity.jpg);
+  background-size: cover;
+}
+
+.No1 {
+  background-color: #303f9f77;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 88.5vh;
+}
+
+.No2 {
+  background-color: #303f9f77;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.No3 {
+  font-size: 25px;
+}
+
+.No4 {
+  color: white;
+}
+
+.No4:hover {
+  color: gainsboro;
+}
+
+.Poshtiban {
+  background-color: #28a745;
+  font-family: "koodak";
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 75px;
+  height: 100px;
+  margin: 45%;
+  z-index: 99;
+  -webkit-transform: translateY(-55px);
+          transform: translateY(-55px);
+}
+
+.Poshtiban:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 750px) {
+  .jumbotron {
+    height: 100%;
+  }
+}
+
+.No5 {
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 15px 0px gray;
+          box-shadow: 0px 0px 15px 0px gray;
+}
+
+.No6 {
+  border-bottom: 5px solid goldenrod;
+  background-color: #303f9f;
+  color: white;
+}
+
+.Color {
+  color: white;
+}
+/*# sourceMappingURL=Panel.css.map */

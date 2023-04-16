@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Panel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Head -->
+    <nav class="navbar Head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/BM.png" alt="Logo" width="100" height="60"
+                    class="d-inline-block align-text-top ml-3">
+            </a>
+            <button type="button" class="Poshtiban py-3 position-fixed" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">پشتیبانی فنی<i class="fa fa-comment-o"></i></button>
+            <!-- Poshtiban -->
+            <div class="modal fade No5" id="exampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header No6">
+                            <h5 class="modal-title" id="exampleModalLabel">ارسال پیام پشتیبانی فنی</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body No6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">موضوع:</label>
+                                    <input type="text" class="form-control text-right" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">پیام:</label>
+                                    <textarea class="form-control text-right" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer No6">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary" onclick="Send()">ارسال پیام</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Poshtiban -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 No2">
+                <li class="nav-item">
+                    <a class="nav-link mr-5 No4" href="../Home.html" style="-webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0,0,0,0.2));">صفحه نخست</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Head -->
+
+    <!-- Main -->
+    <div class="home-wrap">
+        <div class="home-inner No1">
+            <div class="jumbotron jumbotron-fluid No1 text-right mb-0 pt-2">
+                <div class="container">
+                    <h1 class="display-4 text-center Color">صفحه ورود</h1>
+                    <p class="lead mt-4 text-center Color">جهت ورود به سایت فرم زیر را تکمیل کنید</p>
+                    <hr class="my-5">
+                    <div class="container w-50 No2 d-flex justify-content-center align-items-center shadow-lg">
+                        <img src="../Images/login-icon.svg" width="75px" height="75px" alt="Login" class="mt-3 mb-1">
+                        <p class="No3">صفحه ورود</p>
+                        <label for="" class="d-block w-75 text-center m-0">:نام کاربری</label>
+                        <input type="email" class="w-75 text-center" id="Validate1" placeholder="نام کاربری را وارد کنید" required>
+                        <label for="" class="d-block w-75 text-center m-0">:رمز عبور</label>
+                        <input type="password" class="w-75 text-center" id="Validate2" placeholder="رمز عبور را وارد کنید" required>
+                        <a onclick="Home()" class="btn btn-success w-50 mt-4 mb-2">ورود</a>
+                        <p>حساب کاربری ندارید؟<a href="#" class="w-50 text-center mr-1">ثبت نام</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Main -->
+
+    <!-- Java Script-->
+    <script src="../js/Panel.js"></script>
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- End of Java Script-->
+</body>
+
+</html>

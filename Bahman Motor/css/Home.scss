@@ -1,0 +1,192 @@
+// Scss
+    $main-color:#303f9f;
+// _______________
+    $Alert-color:#8290ff;
+// _______________
+    $Font-main:'koodak';
+// _______________
+    $Color1:#333;
+// _______________
+    $Color2:white;
+// _______________
+    $Color2-hover:gainsboro;
+// End of SCSS
+
+// CSS
+@font-face {
+    font-family: 'koodak';
+    src: url('../fonts/KoodakBold.eot?#')format('eot'), url('../fonts/KoodakBold.ttf')format('truetype'), url('../fonts/KoodakBold.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nazanin';
+    src: url('../fonts/Nazanin.eot?#')format('eot'), url('../fonts/Nazanin.ttf')format('truetype'), url('../fonts/Nazanin.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.eot?#')format('eot'), url('../fonts/Yekan.ttf')format('truetype'), url('../fonts/Yekan.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.No1{
+    background-color: $main-color;
+    font-family: $Font-main;
+    direction: rtl;
+    height: 75px;
+}
+.Search{
+    color: $Color2;
+}
+.No7{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Alert{
+    @extend .No7;
+    font-family: $Font-main;
+    color: $Color1;
+    border-radius: 5px;
+    cursor: pointer;
+    direction: ltr;
+    z-index: 999;
+    gap: 70px;
+    width: 290px;
+    height: 50px;
+}
+.Bot:not(:hover){
+    transition: 1s;
+    transform: translate(190px);
+    border-radius: 3px;
+    width: 1px;
+    height: 75px;
+}
+.Bot:hover{
+    transform: translate(0px);
+    transition: 1s ease-in-out;
+}
+.No4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $main-color;
+    font-weight: bolder;
+    font-family: $Font-main;
+    font-size: 20px;
+    direction: rtl;
+}
+.No5{
+    font-family: $Font-main;
+    font-size: 25px;
+    text-align: right;
+    color: $main-color;
+}
+.No6{
+    font-weight: bolder;
+    font-family: $Font-main;
+    font-size: 16px;
+    text-align: right;
+    color: $Color1;
+}
+.No4 i{
+    color: $main-color;
+}
+.card{
+    box-shadow: 0px 0px 2px 0px gray;
+}
+.No4 button{
+    background-color: $main-color;
+    color: $Color2;
+    margin-right: 10px;
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    margin-top: 180px;
+}
+.No8:hover .No6{
+    color: $main-color;
+}
+.No9{
+    @extend .No6;
+    font-size: 14px;
+}
+.No8{
+    gap: 30px;
+}
+.No10{
+    gap: 30px;
+    overflow: auto;
+    height: 160px;
+}
+.Footer{
+    font-family: $Font-main;
+    background-color: $main-color;
+    height: 250px;
+    direction: rtl;
+    gap: 100px;
+}
+.Footer p{
+    font-size: 17px;
+    word-wrap: break-word;
+    width: 200px;
+}
+.Footer:first-child{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    @extend .Footer:first-child;
+    font-size: 25px;
+    color: $Color1;
+}
+li a{
+    font-size: 16px;
+    color: $Color2;
+}
+li a:hover{
+    color:$Color2-hover
+}
+.Darbare{
+    background-color:$main-color;
+    color: $Color2;
+}
+.Darbare:hover{
+    background-color:$main-color;
+    color: $Color2-hover;
+}
+.Darbare2:hover{
+    transition: .3s;
+    background-color:$main-color;
+    color: $Color2-hover;
+}
+.Alert1{
+    background-color: $Alert-color;
+}
+.No10 a .card:hover{
+    background-color: $main-color;
+    color: $Color2;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.No10 a .card:hover .No9{
+    color: $Color2;
+}

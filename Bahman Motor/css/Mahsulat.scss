@@ -1,0 +1,295 @@
+// Here Are SCSS
+$main-color: #303f9f;
+// _______________
+$Color1: white;
+// _______________
+$Font-main: 'koodak';
+// _______________
+$Color1-hover: gainsboro;
+// _______________
+$Backgrond-main:#303f9f77;
+// _______________
+$Color2: #333;
+// End of SCSS
+
+// Here Are CSS
+@font-face {
+    font-family: 'koodak';
+    src: url('../fonts/KoodakBold.eot?#')format('eot'), url('../fonts/KoodakBold.ttf')format('truetype'), url('../fonts/KoodakBold.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nazanin';
+    src: url('../fonts/Nazanin.eot?#')format('eot'), url('../fonts/Nazanin.ttf')format('truetype'), url('../fonts/Nazanin.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.eot?#')format('eot'), url('../fonts/Yekan.ttf')format('truetype'), url('../fonts/Yekan.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: $Font-main;
+}
+
+.Head {
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-color;
+    color: $Color1;
+}
+
+.Poshtiban {
+    background-color: #28a745;
+    font-family: $Font-main;
+    color: $Color1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    width: 75px;
+    height: 100px;
+    margin: 45%;
+    z-index: 99;
+    transform: translateY(-55px);
+}
+
+.Poshtiban:hover {
+    transition: 1s;
+    transform: translateY(-10px);
+}
+
+.No1 {
+    background-color: $main-color;
+    color: $Color1;
+}
+
+.No4 {
+    color: $Color1;
+}
+
+.No4:hover {
+    color: $Color1-hover;
+}
+
+.No2 {
+    z-index: 1;
+    color: $Color1;
+    font-family: 'koodak';
+    background-image: url(../Images/Respect.jpg);
+    background-size: cover;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 15px;
+    transition: 1s;
+
+}
+
+.No2:hover .O {
+    transform: translateY(-50px);
+    transition: 1s;
+    opacity: 1;
+}
+
+.No2:hover {
+    transform: translateY(-20px) scale(1.01, 1.01);
+    transition: 1s;
+    box-shadow: 0px 0px 15px 0px black, inset 0px -150px 150px 0px black;
+}
+
+.O {
+    transition: 1s;
+    opacity: 0;
+}
+
+.No3 {
+    transition: 1s;
+    width: 100%;
+    height: 900px;
+    gap: 100px;
+    background-image: url(../Images/Respect-back.jpg);
+    background-size: cover;
+}
+
+.No5 {
+    text-align: center;
+    width: 500px;
+}
+
+.No6 {
+    padding-top: 8%;
+    color: $Color1;
+    background-color: $Backgrond-main;
+    backdrop-filter: blur(5px);
+}
+
+.No7 {
+    @extend .No3;
+    background-image: url(../Images/Dignity-back.jpg);
+}
+
+.No8 {
+    @extend .No2;
+    background-image: url(../Images/Perestizh.jpg);
+}
+
+.No8:hover .O {
+    transform: translateY(-50px);
+    transition: 1s;
+    opacity: 1;
+}
+
+.No8:hover {
+    transform: translateY(-20px) scale(1.01, 1.01);
+    transition: 1s;
+    box-shadow: 0px 0px 15px 0px black, inset 0px -150px 150px 0px black;
+}
+
+.Footer {
+    color: $Color2;
+    font-family: $Font-main;
+    background-color: $main-color;
+    height: 250px;
+    direction: rtl;
+    gap: 100px;
+}
+
+.Footer p {
+    font-size: 17px;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+.Footer:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+li a {
+    color: $Color1;
+}
+
+li a:hover {
+    color: $Color1-hover;
+}
+
+.Color {
+    color: $Color1;
+}
+
+.Khat {
+    background-image: linear-gradient(90deg, rgba(9, 121, 58, 1) 0%, rgba(21, 144, 147, 1) 43%, rgba(9, 79, 121, 1) 71%, rgba(14, 166, 191, 1) 100%);
+    width: 100%;
+    height: 15px;
+}
+
+.Options {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+    height: auto;
+}
+
+.Options2 {
+    @extend .Options;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width:1360px) {
+
+    .Options2,
+    .Options {
+        display: none;
+    }
+
+    .No3 {
+        height: 1250px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+
+    .Options2,
+    .Options {
+        display: none;
+    }
+
+    .No3,
+    .No6 {
+        height: 900px;
+    }
+}
+
+.No9 {
+    width: 1000px;
+    height: 175px;
+    background-color: rgba(103, 139, 172, 0.548);
+    border-radius: 15px;
+}
+
+.No9 {
+    transition: 1s;
+    transform: translateX(-91vw);
+}
+
+.No9:hover {
+    transition: 1.5s;
+    transform: translateX(-32vw);
+}
+
+.No9 a {
+    transform: rotate(-90deg);
+}
+
+.No9 img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.No9 img:hover {
+    transition: .5s;
+    transform: scale(2, 2);
+}
+.to-top {
+    position: fixed;
+    z-index: 5;
+    right: 25px;
+    bottom: 15px;
+    border: bottom 5px solid $main-color;
+    background-color: white;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    opacity: 0;
+    text-decoration: none;
+}
+.to-top:hover{
+    transition: .5s;
+    color: $Color1;
+    background-color: $Color2;
+}
+.to-top.active{
+    opacity: 1;
+    bottom: 50px;
+}
